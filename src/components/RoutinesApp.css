@@ -1,0 +1,75 @@
+/* Routines App Specific Styles */
+.routines-app {
+  min-height: 100vh;
+  background: inherit;
+}
+
+.routines-app-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  color: white;
+  position: relative;
+}
+
+.routines-app-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.routines-app-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0.5rem 0 0;
+  font-weight: 300;
+}
+
+.switch-to-notes-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.switch-to-notes-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments for switch button */
+@media (max-width: 768px) {
+  .switch-to-notes-btn {
+    position: static;
+    margin: 1rem auto 0;
+    display: inline-flex;
+  }
+  
+  .routines-app-header {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .switch-to-notes-btn span {
+    display: none;
+  }
+  
+  .switch-to-notes-btn i {
+    font-size: 1.3rem;
+  }
+}
