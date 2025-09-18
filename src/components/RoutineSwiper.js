@@ -103,8 +103,8 @@ const RoutineSwiper = ({ routines, onCreateRoutine }) => {
             onMouseMove={(e) => handleMove(e.clientX, e.clientY)}
             onMouseUp={handleEnd}
             onMouseLeave={handleEnd}
-            onTouchStart={(e) => handleStart(e.touches[0].clientX, e.touches.clientY)}
-            onTouchMove={(e) => handleMove(e.touches.clientX, e.touches.clientY)}
+            onTouchStart={(e) => handleStart(e.touches[0].clientX, e.touches[0].clientY)}
+            onTouchMove={(e) => handleMove(e.touches[0].clientX, e.touches[0].clientY)}
             onTouchEnd={handleEnd}
           >
             <div 
