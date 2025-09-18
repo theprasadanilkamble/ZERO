@@ -1,6 +1,6 @@
 import React from 'react';
 import './LoginPage.css';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 
 const LoginPage = () => {
   const { loginWithGoogle } = useAuth();
@@ -42,5 +42,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
-

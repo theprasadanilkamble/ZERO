@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import RoutineSwiper from './RoutineSwiper';
-import CreateRoutine from './CreateRoutine';
-import './RoutinesApp.css';
+import RoutineSwiper from '../components/RoutineSwiper';
+import CreateRoutine from '../components/CreateRoutine';
+import '../styles/RoutinesApp.css';
 
 const RoutinesApp = ({ onSwitchToNotes }) => {
   const [currentView, setCurrentView] = useState('swiper'); // 'swiper' or 'create'
@@ -71,3 +71,5 @@ const RoutinesApp = ({ onSwitchToNotes }) => {
 };
 
 export default RoutinesApp;
+
+

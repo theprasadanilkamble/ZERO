@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import RoutinesApp from './components/RoutinesApp';
-import NotesApp from './components/NotesApp';
+import RoutinesApp from './modules/routines/pages/RoutinesApp';
+import NotesApp from './modules/notes/pages/NotesApp';
 import './App.css';
-import LoginPage from './components/LoginPage';
+import LoginPage from './pages/Login/LoginPage';
 import { useAuth } from './context/AuthContext';
 
 function App() {

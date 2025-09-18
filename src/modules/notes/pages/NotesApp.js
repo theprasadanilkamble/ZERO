@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './NotesApp.css';
+import '../styles/NotesApp.css';
 
 const NotesApp = ({ onSwitchToRoutines }) => {
   // State management
