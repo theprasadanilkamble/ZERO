@@ -7,6 +7,8 @@ const LoginPage = () => {
 
   return (
     <div className="login-page">
+      <div className="bg-orb bg-orb-1"></div>
+      <div className="bg-orb bg-orb-2"></div>
       <header className="main-app-header login-header">
         <div className="app-logo">
           <i className="fas fa-infinity logo-icon"></i>
@@ -28,6 +30,34 @@ const LoginPage = () => {
             </button>
           </div>
 
+          <div className="login-divider">
+            <span></span>
+          </div>
+
+          <div className="login-features">
+            <div className="feature-item">
+              <i className="fas fa-heart"></i>
+              <div>
+                <h3>Habits that stick</h3>
+                <p>Swipe, plan, and track routines tailored to you.</p>
+              </div>
+            </div>
+            <div className="feature-item">
+              <i className="fas fa-book"></i>
+              <div>
+                <h3>Thoughts that matter</h3>
+                <p>Focus mode notes with privacy blur and quick formatting.</p>
+              </div>
+            </div>
+            <div className="feature-item">
+              <i className="fas fa-magic"></i>
+              <div>
+                <h3>Simple & beautiful</h3>
+                <p>Clean design with gentle motion and glassy surfaces.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="login-footnote">
             <p>
               By continuing, you agree to our{' '}
@@ -42,3 +72,5 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+
